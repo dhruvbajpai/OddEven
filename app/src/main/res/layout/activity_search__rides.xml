@@ -1,0 +1,83 @@
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/app_bar_search"
+            layout="@layout/app_bar"
+
+            ></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ENTER YOUR ROUTE DETAILS TO SEARCH ON !  "
+                android:textColor="#CC2936"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="START FROM HERE"
+                android:textSize="20sp" />
+
+            <com.dhruv.oddeven.Utils.CustomAutoCompleteTextView
+                android:id="@+id/src_point"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="END HERE"
+                android:textSize="20sp" />
+
+            <com.dhruv.oddeven.Utils.CustomAutoCompleteTextView
+                android:id="@+id/des_point"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:lines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                 android:background="#CC2936"
+                android:layout_marginTop="40dp"
+                android:elevation="5dp"
+                android:text="See Your Ride Options" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

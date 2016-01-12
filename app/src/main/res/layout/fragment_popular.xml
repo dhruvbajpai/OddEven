@@ -1,0 +1,46 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:background="#F71115"
+       android:weightSum="2"
+       android:layout_alignParentBottom="true">
+
+       <com.rey.material.widget.Button
+           android:layout_width="0dp"
+           app:rd_enable="true"
+           android:id="@+id/search_find"
+           android:layout_height="48dp"
+           android:layout_gravity="center"
+           android:text="Search Your Own"
+           android:textColor="#ffff"
+           app:rd_backgroundColor="#F71115"
+           android:gravity="center"
+           android:elevation="5dp"
+           android:layout_weight="2"/>
+       <!--<com.rey.material.widget.Button
+           android:layout_width="0dp"
+           android:layout_height="48dp"
+           android:textColor="#ffff"
+           android:id="@+id/open_people_page"
+           app:rd_enable="true"
+           app:rd_backgroundColor="#F71115"
+           android:layout_gravity="center"
+           android:text="Odd/Even Rides"
+           android:foregroundGravity="clip_horizontal"
+           android:gravity="center"
+           android:elevation="5dp"
+           android:layout_weight="1"/>-->
+   </LinearLayout>
+
+
+</RelativeLayout>

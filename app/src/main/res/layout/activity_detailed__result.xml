@@ -1,0 +1,213 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar_detailed_result"
+            layout="@layout/app_bar"
+
+            ></include>
+
+        <!--Buttons-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/send_request"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Send Request" />
+
+            <Button
+                android:id="@+id/call_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Call" />
+        </LinearLayout>
+
+<!--MAP-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:layout_marginTop="14dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            tools:context=".MapsActivity" />
+
+
+        <!--FOR THE ADDRESSES BLOCK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#F4F4ED"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/green"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/red"
+                        />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/from_address"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentTop="true"
+                        android:text="FROM ADDRESS"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/to_address"
+                        android:gravity="bottom"
+                        android:layout_alignParentBottom="true"
+                        android:text="TO ADDRESS"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Person Information block-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/user_error"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Person Name"/>
+
+                <!--CAR TYPE-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="left"
+                    android:textSize="15sp"
+                    android:text="Male / 32"
+                    android:textStyle="bold"
+                    android:id="@+id/gender_age"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="left"
+                    android:textSize="15sp"
+                    android:text="abcd@gmail.com"
+                    android:textStyle="bold"
+                    android:id="@+id/person_email"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="left"
+                    android:textSize="15sp"
+                    android:text="Odd Car"
+                    android:id="@+id/cartype"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="left"
+                    android:textSize="15sp"
+                    android:text="DL4CL4876"
+                    android:id="@+id/carnumber"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

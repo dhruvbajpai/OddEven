@@ -1,0 +1,39 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#C1666B"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODD EVEN DELHI"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:src="@drawable/car"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beat the Rule ! Curb Pollution ! "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>

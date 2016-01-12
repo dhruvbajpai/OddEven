@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhruv.oddeven" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".ListPeople"
+            android:label="@string/title_activity_list_people" />
+        <activity
+            android:name=".PopularList"
+            android:label="@string/title_activity_popular_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Search_Rides"
+            android:label="@string/title_activity_search__rides"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Search_Results"
+            android:label="@string/title_activity_search__results"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Add_Commute"
+            android:label="@string/title_activity_add__commute"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAyEvlTOaL2wzKzF_g-B1KAKqa2BgAhmbE" />
+
+        <activity
+            android:name=".Detailed_Result"
+            android:label="@string/title_activity_detailed__result"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".RideHistory"
+            android:label="@string/title_activity_ride_history"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

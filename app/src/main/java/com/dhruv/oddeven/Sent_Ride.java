@@ -46,7 +46,7 @@ public class Sent_Ride extends Fragment {
 
         mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-
+	//Toast.maketext(getApplicationContext().getActivity(),"DONE HERE",LENGTH.SHORT).show();
         new AsyncTask<Void, Void, Void>() {
 
             @Override
